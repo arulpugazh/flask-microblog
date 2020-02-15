@@ -2,7 +2,8 @@
 
 {% block content %}
 
-    <form action="" method="submit" novalidate>
+    <form action="" method="post" novalidate>
+    {{ form.hidden_tag() }}
         <h1>Sign In</h1>
         <p>
             {{ form.username.label }}
